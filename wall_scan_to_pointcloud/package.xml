@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>wall_scan_to_pointcloud</name>
+  <version>0.1.0</version>
+  <description>Convert wall_scan LaserScan data into a PointCloud2 in the laser frame.</description>
+  <maintainer email="ros@slamtec.com">Slamtec ROS Maintainer</maintainer>
+  <license>BSD</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

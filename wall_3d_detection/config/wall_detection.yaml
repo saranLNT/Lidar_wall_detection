@@ -1,0 +1,20 @@
+cloud_accumulator:
+  ros__parameters:
+
+    fixed_frame: "odom"
+    lidar_frame: "laser"
+    input_cloud_topic: "/wall_scan_cloud"
+
+    max_cloud_size: 500000
+
+    accumulation_distance: 0.05
+
+    voxel_size: 0.03
+
+    # Forward window in the robot frame: keep wall data ahead/right and drop old history.
+    window_forward: 3.0
+    window_side: 1.2
+
+    # Keep a wider wall slice so the full wall height stays visible.
+    min_height: 0.0
+    max_height: 1.5
