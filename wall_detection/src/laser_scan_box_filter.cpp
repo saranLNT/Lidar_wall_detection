@@ -18,12 +18,12 @@ public:
         // ============================================================
 
         // Forward direction
-        this->declare_parameter<double>("min_x", -1.8);
-        this->declare_parameter<double>("max_x", 0.81);
+        this->declare_parameter<double>("min_x", -0.65);
+        this->declare_parameter<double>("max_x", -0.85);
 
         // Left / right direction
-        this->declare_parameter<double>("min_y", -0.8);
-        this->declare_parameter<double>("max_y", -0.69);
+        this->declare_parameter<double>("min_y", 1.22);
+        this->declare_parameter<double>("max_y", -1.72);
 
         // Laser range limits
         this->declare_parameter<double>("min_range", 0.05);
@@ -375,4 +375,3 @@ int main(int argc, char * argv[])
     rclcpp::shutdown();
 
     return 0;
-}
